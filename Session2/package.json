@@ -1,0 +1,22 @@
+{
+  "name": "session2",
+  "version": "1.0.0",
+  "description": "Learning React from Basics",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manas1803/NamasteReact.git"
+  },
+  "author": "Manas Pant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manas1803/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/manas1803/NamasteReact#readme",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}
