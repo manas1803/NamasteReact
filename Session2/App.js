@@ -1,13 +1,14 @@
-const heading = React.createElement("h1", { id: "header", key: "1" }, "Hello World from React!!")
-const heading2 = React.createElement("h2", { id: "header2", key: "4" }, "This is the sibling")
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const child = React.createElement("div", { id: "child", key: "2" }, heading,heading2)
+const element = React.createElement("h1",{id:"header",className:"heading",key:"1"},"Welcome to my World!")
+const elementSibling = React.createElement("h2",{id:"header2",className:"heading-sibling",key:"2"},"Welcome to world of Siblings!")
 
-const parent = React.createElement("div", { id: "parent", key: "3" }, child)
+const parent = React.createElement("div",{id:"parent",className:"parents"},[element,elementSibling])
 
-const documentRoot = document.querySelector("#root")
-console.log("parent is ", parent)
-console.log("child is ", child)
-console.log("heading is ", heading)
-const root = ReactDOM.createRoot(documentRoot)
-root.render(parent)
+const mainContainer = React.createElement("main",{id:"container"},parent)
+
+const rootElement = document.querySelector("#root")
+const root = ReactDOM.createRoot(rootElement)
+
+root.render(mainContainer)
