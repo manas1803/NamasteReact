@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  display: flex;
+  border: 1px solid;
+}
+.logo-container > img {
+  max-width: 20%;
+  height: auto;
+}
+
+.nav-container > ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-container > ul > li {
+  padding: 0.5rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  border: 1px solid gray;
+  margin: 1rem;
+}
+
+.card > img {
+  height: auto;
+}
